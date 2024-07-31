@@ -1,0 +1,57 @@
+        <div class="my-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 p-0">
+                        <div class="card my-3">
+                            <h5 class="card-header">Prototype</h5>
+                            <div class="card-body">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta possimus reprehenderit sapiente, illum harum delectus recusandae eos expedita. Excepturi fugiat, vel officia repellat aliquid mollitia doloribus consequatur officiis eaque voluptate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card my-3">
+                            <h5 class="card-header">Useful</h5>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="//anasrar.blogspot.com/2018/12/template-blogger-sampaisimple-dengan-framework-bootstrap4.html">Documentation</a></li>
+                                    <li><a href="/p/page.html">Page Example</a></li>
+                                    <li><a href="/sad">Error Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 p-0">
+                        <div class="card my-3">
+                            <h5 class="card-header">Service</h5>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#">HEX to RGB</a></li>
+                                    <li><a href="#">Base64 Encrypt Decrypt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="card p-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-sm-8">
+                        <h5 class="h6 small mb-md-0">
+                            © <span itemprop="copyrightYear">2018</span>
+                            <a href="https://laesg.blogspot.com/" itemprop="copyrightHolder" itemscope="itemscope" itemtype="http://schema.org/Person" title="LaeSGueU"><span itemprop="name" title="LaeSGueU">LaeSGueU</span></a> All Right Reserved
+                        </h5>
+                    </div>
+                    <div class="col-12 col-sm-4 text-right">
+                        <h6 class="h6 small mb-0">
+                            BS4 SampaiSimple By <a href="//anasrar.blogspot.com" id="naas" rel="dofollow">Anas RAR</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </footer>

@@ -1,0 +1,164 @@
+<!--Hola-->
+<b:section class="main" id="main" showaddelement="no">
+	<b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog'>
+		<!-- #file=blog_default_includables.xml -->
+		<b:includable id='nextprev'>
+			<div class='blog-pager' id='blog-pager'>
+				<b:if cond='data:newerPageUrl'>
+					<a class='blog-pager-newer-link' rel='next' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+				</b:if>
+				<b:if cond='data:olderPageUrl'>
+					<a rel='prev' class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+				</b:if>
+
+				<a class='home-link' rel='home' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+			</div>
+		</b:includable>
+		<!-- #file=post.xml -->
+		<b:includable id='main' var='top'>
+			<div class='blog-posts hfeed'>
+				<b:include data='top' name='status-message'/>
+
+				<data:defaultAdStart/>
+
+				<b:loop values='data:posts' var='post' index='postNum'>
+					<div expr:class='"post-outer post-numero-" + data:postNum'>
+						<b:include data='post' name='post'/>
+		
+						<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+							<b:include data='post' name='comment_picker'/>
+						</b:if>
+						<b:if cond='data:blog.pageType == &quot;item&quot;'>
+							<b:include data='post' name='comment_picker'/>
+						</b:if>
+					</div>
+					<b:if cond='data:post.includeAd'>
+						<b:if cond='data:post.isFirstPost'>
+							<data:defaultAdEnd/>
+						<b:else/>
+							<data:adEnd/>
+						</b:if>
+						<div class='inline-ad'>
+							<data:adCode/>
+						</div>
+						<data:adStart/>
+					</b:if>
+				</b:loop>
+
+				<data:adEnd/>
+			</div><!-- .blog-posts -->
+
+			<!-- navigation -->
+			<b:include name='nextprev'/>
+
+			<!-- feed links -->
+			<b:include name='feedLinks'/>
+		</b:includable>
+	</b:widget><!-- #Blog1 -->
+</b:section>
+<!--Hola-->
+<div class="row mb-3">
+	<div class="col-lg-8 col-sm-12">
+		<section class="row">
+			<div class="col-lg-6 col-sm-12 mb-3">
+				<article class="card">
+					<a href="post.html">
+						<img src="https://1.bp.blogspot.com/-tIRrvsoqVj0/X3oBLn5UlZI/AAAAAAAAG3M/tejmwJEG224eJZ7Qc8FJvCJC_AB6Vo4JgCPcBGAsYHg/s300/action-logo.jpg" class="card-img-top" />
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">
+							<a href="post.html">
+								CONTENIDO PRINCIPAL
+							</a>
+						</h5>
+						<div class="small text-muted">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z" />
+								<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+							</svg>
+							On agosto 19, 2019
+						</div>
+						<p class="small mb-2">
+							Continúan las aventuras del adolescente vikingo Hipo y su fiel dragón Chimuelo. En esta ocasión, m…
+						</p>
+						<p class="small mb-0">
+							by
+							<a href="#">
+								GeleOMFG
+							</a>
+							<span class="float-right">
+								<a href="#">
+									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+									</svg>
+									0
+								</a>
+							</span>
+						</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+	<aside class="col-lg-4 col-sm-12">
+		<!-- Categories Widget -->
+		<div class="card m-b-4">
+			<h5 class="card-header">
+				Categories
+			</h5>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-lg-6">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#">
+									Web Design
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									HTML
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Freebies
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="#">
+									JavaScript
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									CSS
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Tutorials
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Side Widget -->
+		<div class="card my-4">
+			<h5 class="card-header">
+				Side Widget
+			</h5>
+			<div class="card-body">
+				You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+			</div>
+		</div>
+	</aside>
+</div>
+
+

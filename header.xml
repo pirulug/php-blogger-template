@@ -1,0 +1,14 @@
+<header class="py-3 border-bottom">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center">
+                <h1 class="mb-0 text-uppercase"><a href="#">Gueulaes</a></h1>
+            </div>
+            <div class="d-none d-md-block col-md-8">
+                <div class="mb-3">
+                    <img alt="64x64" class="w-100" style="max-height: 110px" src="https://1.bp.blogspot.com/-tIRrvsoqVj0/X3oBLn5UlZI/AAAAAAAAG3M/tejmwJEG224eJZ7Qc8FJvCJC_AB6Vo4JgCPcBGAsYHg/s300/action-logo.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
